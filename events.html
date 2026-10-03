@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A responsive Lu.ma Events-page recreation for teaching HTML, CSS, and JavaScript state." />
+    <title>Events — Lu.ma Teaching Build</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="stylesheet" href="styles.css?v=15" />
+    <script src="events.js?v=1" defer></script>
+  </head>
+  <body class="events-page">
+    <a class="skip-link" href="#events-main">Skip to main content</a>
+
+    <header class="events-site-header">
+      <a class="events-home-mark" href="events.html" aria-label="Events home">
+        <img src="assets/icons/star-four-fill.svg" alt="" />
+      </a>
+      <nav class="events-primary-nav" aria-label="Primary navigation">
+        <a class="events-nav-link is-current" href="events.html" aria-current="page">
+          <img src="assets/icons/ticket.svg" width="18" height="18" alt="" aria-hidden="true" />
+          <span>Events</span>
+        </a>
+        <a class="events-nav-link" href="#calendars">
+          <img src="assets/icons/calendar.svg" width="18" height="18" alt="" aria-hidden="true" />
+          <span>Calendars</span>
+        </a>
+        <a class="events-nav-link" href="index.html#discover">
+          <img src="assets/icons/compass.svg" width="18" height="18" alt="" aria-hidden="true" />
+          <span>Discover</span>
+        </a>
+      </nav>
+
+      <nav class="events-account-nav" aria-label="Account navigation">
+        <time datetime="2026-08-12T14:34:00-04:00">2:34 PM EDT</time>
+        <a href="#create-event">Create Event</a>
+        <a class="icon-link has-notification" href="#notifications" aria-label="Notifications">
+          <img src="assets/icons/bell.svg" alt="" />
+        </a>
+        <a class="profile-link" href="#profile" aria-label="Open profile">
+          <img src="assets/images/steel-silicon.avif" alt="" />
+        </a>
+      </nav>
+    </header>
+
+    <main id="events-main" class="events-main">
+      <div class="events-title-row">
+        <h1>Events</h1>
+        <div class="event-view-switcher" aria-label="Event timeframe">
+          <a class="is-selected" href="#upcoming-events" aria-current="page">Upcoming</a>
+          <span aria-disabled="true">Past</span>
+        </div>
+      </div>
+
+      <section class="event-timeline" id="upcoming-events" aria-label="Upcoming events">
+        <div class="event-day-group">
+          <header class="event-day-label">
+            <h2 class="event-day-heading event-day-heading--relative">Today</h2>
+            <p>Wednesday</p>
+          </header>
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="timeline-event-card" data-event-id="studio-night">
+            <a
+              class="timeline-event-link"
+              href="#invitation-panel"
+              data-action="open-invitation"
+              data-event-id="studio-night"
+              aria-labelledby="event-studio-night-title"
+              aria-controls="invitation-panel"
+              aria-expanded="false"
+              aria-haspopup="dialog"
+            ></a>
+            <div class="timeline-event-copy">
+              <time datetime="2026-08-12T18:30:00-04:00">6:30 PM</time>
+              <h3 id="event-studio-night-title">Studio Night Demo Party #4</h3>
+              <p class="event-host">
+                <span class="host-avatar"><img src="assets/images/fractal-party.png" alt="" /></span>
+                By Maya Chen
+              </p>
+              <p class="event-place">
+                <img src="assets/icons/map-pin.svg" alt="" />
+                Design Lab
+              </p>
+              <div class="status-and-attendees">
+                <span class="invitation-status" data-role="status-badge">Invited</span>
+                <span class="attendee-stack" aria-label="More than 40 attendees">
+                  <img src="assets/images/cafe-cursor.avif" alt="" />
+                  <img src="assets/images/creative-edge.avif" alt="" />
+                  <img src="assets/images/steel-silicon.avif" alt="" />
+                  <span>+42</span>
+                </span>
+              </div>
+            </div>
+            <img class="timeline-event-image" src="assets/images/fractal-party.png" alt="Soft abstract color-field event artwork" />
+          </article>
+        </div>
+
+        <div class="event-day-group">
+          <header class="event-day-label">
+            <h2 class="event-day-heading event-day-heading--relative">Tomorrow</h2>
+            <p>Thursday</p>
+          </header>
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="timeline-event-card" data-event-id="creative-ai">
+            <a
+              class="timeline-event-link"
+              href="#invitation-panel"
+              data-action="open-invitation"
+              data-event-id="creative-ai"
+              aria-labelledby="event-creative-ai-title"
+              aria-controls="invitation-panel"
+              aria-expanded="false"
+              aria-haspopup="dialog"
+            ></a>
+            <div class="timeline-event-copy">
+              <time datetime="2026-08-13T18:00:00-04:00">6:00 PM</time>
+              <h3 id="event-creative-ai-title">Campus Creative AI Forum</h3>
+              <p class="event-host avatar-stack-row">
+                <span class="avatar-stack" aria-hidden="true">
+                  <img src="assets/images/cafe-cursor.avif" alt="" />
+                  <img src="assets/images/creative-edge.avif" alt="" />
+                  <img src="assets/images/mama-nyc.avif" alt="" />
+                </span>
+                <span>By Jordan Lee, Priya Shah &amp; Alex Kim</span>
+              </p>
+              <p class="event-place">
+                <img src="assets/icons/map-pin.svg" alt="" />
+                Innovation Space
+              </p>
+              <div class="status-and-attendees">
+                <span class="invitation-status" data-role="status-badge">Invited</span>
+                <span class="attendee-stack" aria-label="More than 300 attendees">
+                  <img src="assets/images/startup-founders.avif" alt="" />
+                  <img src="assets/images/steel-silicon.avif" alt="" />
+                  <img src="assets/images/agentics.avif" alt="" />
+                  <span>+318</span>
+                </span>
+              </div>
+            </div>
+            <img class="timeline-event-image" src="assets/images/agentics.avif" alt="Dark event poster with an electric abstract motif" />
+          </article>
+        </div>
+
+        <div class="event-day-group">
+          <header class="event-day-label">
+            <h2 class="event-day-heading event-day-heading--calendar">Aug 14</h2>
+            <p>Friday</p>
+          </header>
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="timeline-event-card" data-event-id="friday-social">
+            <a
+              class="timeline-event-link"
+              href="#invitation-panel"
+              data-action="open-invitation"
+              data-event-id="friday-social"
+              aria-labelledby="event-friday-social-title"
+              aria-controls="invitation-panel"
+              aria-expanded="false"
+              aria-haspopup="dialog"
+            ></a>
+            <div class="timeline-event-copy">
+              <time datetime="2026-08-14T18:30:00-04:00">6:30 PM</time>
+              <h3 id="event-friday-social-title">Friday Night Social</h3>
+              <p class="event-host">
+                <span class="host-avatar"><img src="assets/images/mama-nyc.avif" alt="" /></span>
+                By Campus Neighbors
+              </p>
+              <p class="event-place">
+                <img src="assets/icons/map-pin.svg" alt="" />
+                College Walk
+              </p>
+              <div class="status-and-attendees">
+                <span class="invitation-status" data-role="status-badge">Invited</span>
+                <span class="attendee-stack" aria-label="More than 80 attendees">
+                  <img src="assets/images/mama-nyc.avif" alt="" />
+                  <img src="assets/images/startup-founders.avif" alt="" />
+                  <img src="assets/images/steel-silicon.avif" alt="" />
+                  <img src="assets/images/agentics.avif" alt="" />
+                  <span>+88</span>
+                </span>
+              </div>
+            </div>
+            <img class="timeline-event-image" src="assets/images/mama-nyc.avif" alt="Colorful illustrated event poster" />
+          </article>
+        </div>
+      </section>
+
+      <details class="testing-tools">
+        <summary>Testing &amp; grading utilities</summary>
+        <p class="type-body-small">These controls exist to make required states easy to verify. They are not part of the normal attendee flow.</p>
+        <div class="testing-tools-buttons">
+          <button type="button" data-action="reset-demo-data">Reset demo data</button>
+          <button type="button" data-action="preview-empty-panel">Preview empty-selection panel</button>
+          <button type="button" data-action="preview-error-panel">Preview expired-invitation error</button>
+        </div>
+      </details>
+    </main>
+
+    <section
+      class="invitation-layer"
+      id="invitation-panel"
+      aria-labelledby="invitation-title"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      inert
+    >
+      <button class="invitation-scrim" type="button" data-action="close-invitation" aria-label="Close event details"></button>
+      <div class="invitation-panel" tabindex="-1">
+        <header class="invitation-toolbar">
+          <button
+            class="panel-close"
+            type="button"
+            data-action="close-invitation"
+            data-tooltip="Close"
+            aria-label="Close event details"
+          >
+            <img src="assets/icons/chevrons-right.svg" alt="" />
+          </button>
+          <div class="panel-toolbar-actions">
+            <button type="button">
+              <img src="assets/icons/copy.svg" alt="" />
+              <span>Copy Link</span>
+            </button>
+            <a href="#event-page">
+              <span>Event Page</span>
+              <img src="assets/icons/arrow-up-right.svg" alt="" />
+            </a>
+          </div>
+        </header>
+
+        <div class="invitation-panel-scroll">
+          <!-- Populated state: filled in by JavaScript whenever a real event is selected. -->
+          <div data-panel-view="event" hidden>
+            <img class="invitation-hero" data-role="hero-image" src="" alt="" />
+
+            <div class="invitation-heading">
+              <h2 class="invitation-title" id="invitation-title" data-role="title"></h2>
+              <p class="type-body">
+                <span class="host-avatar"><img data-role="host-avatar-small" src="" alt="" /></span>
+                <span data-role="host-name-inline"></span>
+              </p>
+            </div>
+
+            <div class="invitation-facts">
+              <div class="invitation-fact">
+                <time class="invitation-date-tile" data-role="date-tile">
+                  <span data-role="date-month"></span>
+                  <strong data-role="date-day"></strong>
+                </time>
+                <p>
+                  <strong class="type-medium" data-role="date-full"></strong>
+                  <span class="type-body-small" data-role="time-range"></span>
+                </p>
+              </div>
+              <div class="invitation-fact">
+                <img src="assets/icons/map-pin.svg" alt="" />
+                <p>
+                  <a class="invitation-venue-link" href="#location-heading">
+                    <strong class="type-medium" data-role="venue-name"></strong>
+                    <img src="assets/icons/arrow-up-right.svg" alt="" />
+                  </a>
+                  <span class="type-body-small" data-role="venue-address"></span>
+                </p>
+              </div>
+            </div>
+
+            <section class="invitation-registration" data-invitation-state="invited" aria-labelledby="registration-heading">
+              <h3 class="invitation-section-label type-semibold" id="registration-heading">Registration</h3>
+
+              <div data-state-view="invited">
+                <div class="registration-invite-copy">
+                  <span class="registration-avatar"><img data-role="host-avatar-invite" src="" alt="" /></span>
+                  <p>
+                    <strong class="type-semibold">You are invited by <span data-role="host-name-invite"></span></strong>
+                    <span class="type-body">We’d love to have you join us.</span>
+                  </p>
+                </div>
+                <p class="registration-welcome type-body">Welcome, Alex! To join the event, please register below.</p>
+                <div class="registration-user">
+                  <span class="profile-dot"><img src="assets/images/steel-silicon.avif" alt="" /></span>
+                  <strong class="type-semibold">Alex Morgan</strong>
+                  <span class="type-body">alex@columbia.edu</span>
+                </div>
+                <div class="registration-buttons">
+                  <button class="accept-invite-button" type="button" data-action="accept-invitation">Accept Invite</button>
+                  <button class="decline-invite-button" type="button" data-action="decline-invitation">Decline</button>
+                </div>
+              </div>
+
+              <div class="registration-confirmation" data-state-view="going" hidden>
+                <div class="confirmation-kicker">
+                  <span class="profile-dot"><img src="assets/images/steel-silicon.avif" alt="" /></span>
+                  <span class="type-body">Starting soon</span>
+                </div>
+                <h4 class="confirmation-title" tabindex="-1">You’re In</h4>
+                <div class="confirmation-actions" aria-label="Registration actions">
+                  <button class="confirmation-action-button" type="button">
+                    <img src="assets/icons/calendar.svg" alt="" />
+                    <span>Add to Calendar</span>
+                  </button>
+                  <button class="confirmation-action-button invite-friend-button" type="button">
+                    <img src="assets/icons/share.svg" alt="" />
+                    <span>Invite a Friend</span>
+                  </button>
+                </div>
+                <p class="confirmation-cancel-copy type-body">
+                  No longer able to attend? Notify the host by
+                  <button type="button" data-action="decline-invitation">canceling your registration</button>.
+                </p>
+              </div>
+
+              <div class="registration-notice" data-state-view="declined" hidden>
+                <p class="type-body"><strong class="type-semibold">You declined this invitation.</strong> The host won’t be notified further, and you can still change your mind.</p>
+                <div class="registration-buttons registration-buttons--single">
+                  <button class="accept-invite-button" type="button" data-action="accept-invitation">Change to Going</button>
+                </div>
+              </div>
+            </section>
+
+            <p class="sr-only" data-role="invitation-announcement" aria-live="polite" aria-atomic="true"></p>
+
+            <section class="invitation-about" aria-labelledby="about-heading">
+              <h3 class="invitation-section-label type-body-small type-semibold" id="about-heading">About Event</h3>
+              <div data-role="about-paragraphs"></div>
+            </section>
+
+            <section class="invitation-location" aria-labelledby="location-heading">
+              <h3 class="invitation-section-label type-body-small type-semibold" id="location-heading">Location</h3>
+              <p class="type-body">
+                <strong class="type-semibold" data-role="location-name"></strong>
+                <span class="type-body" data-role="location-address"></span>
+              </p>
+            </section>
+
+            <section class="invitation-host" aria-labelledby="host-heading">
+              <h3 class="invitation-section-label type-body-small type-semibold" id="host-heading">Hosted By</h3>
+              <div>
+                <span class="registration-avatar"><img data-role="host-avatar-large" src="" alt="" /></span>
+                <strong class="type-semibold" data-role="host-name-section"></strong>
+              </div>
+            </section>
+
+            <section class="invitation-going" aria-labelledby="going-heading">
+              <h3 class="invitation-section-label type-body-small type-semibold" id="going-heading" data-role="going-heading"></h3>
+              <p class="going-summary type-body" data-role="going-summary"></p>
+            </section>
+          </div>
+
+          <!-- No-selection state: shown if the panel is ever opened without a resolvable event. -->
+          <div class="panel-state-message" data-panel-view="empty" hidden>
+            <h2 class="invitation-title">No event selected</h2>
+            <p class="type-body">Choose an event from the Events list to see its invitation details here.</p>
+          </div>
+
+          <!-- Recoverable error state: shown if the requested event id can't be found (e.g. a stale link). -->
+          <div class="panel-state-message panel-state-message--error" data-panel-view="error" hidden>
+            <h2 class="invitation-title">We couldn’t load this invitation</h2>
+            <p class="type-body">This invitation link looks out of date, so its details aren’t available right now.</p>
+            <p class="type-body">What you can do: close this panel, then select an event directly from the Events list to open its current invitation.</p>
+            <div class="registration-buttons registration-buttons--single">
+              <button class="accept-invite-button" type="button" data-action="close-invitation">Close panel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
